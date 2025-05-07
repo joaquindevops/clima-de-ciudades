@@ -1,0 +1,54 @@
+
+
+{% extends "layout.html" %}
+
+{% block content %}
+<h2>Clima actual en {{ ciudad }}</h2>
+
+{% if clima %}
+    <ul>
+        <li>Temperatura: {{ clima.temperature }}°C</li>
+        <li>Viento: {{ clima.windspeed }} km/h</li>
+        <li>Dirección del viento: {{ clima.winddirection }}°</li>
+    </ul>
+{% else %}
+    <p>No se pudo obtener información del clima.</p>
+{% endif %}
+
+<a href="{{ url_for('index') }}">Volver</a>
+{% endblock %}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

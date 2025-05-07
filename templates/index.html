@@ -1,0 +1,12 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<h2>Seleccioná una ciudad:</h2>
+<ul>
+    {% for ciudad in ciudades %}
+        <li><a href="{{ url_for('clima') }}?ciudad={{ ciudad }}">{{ ciudad }}</a></li>
+    {% endfor %}
+</ul>
+{% endblock %}
+
+
