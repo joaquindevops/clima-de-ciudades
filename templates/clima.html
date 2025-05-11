@@ -1,9 +1,7 @@
-<!-- indica que esta plantilla hereda de otra plantilla llamada layout.html -->
 {% extends "layout.html" %}
 
 {% block content %}
-<h2>Clima actual en: {{ ciudad }}</h2>
-<!-- Este es un comentario -->
+<h2>Clima actual en {{ ciudad }}</h2>
 
 {% if clima %}
     <ul>

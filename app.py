@@ -7,6 +7,7 @@ ciudades = {
     "Buenos Aires": {"lat": -34.6037, "lon": -58.3816},
     "Córdoba": {"lat": -31.4201, "lon": -64.1888},
     "Río Cuarto": {"lat": -33.1249, "lon": -64.3499},
+    "Villa Mercedes": {"lat": -33.6757, "lon": -65.4570},
     "Madrid": {"lat": 40.4168, "lon": -3.7038},
     "Nueva York": {"lat": 40.7128, "lon": -74.0060},
     "Tokio": {"lat": 35.6895, "lon": 139.6917},
