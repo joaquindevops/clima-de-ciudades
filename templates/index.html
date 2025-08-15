@@ -1,12 +1,13 @@
 {% extends "layout.html" %}
 
 {% block content %}
-<h2>Seleccioná una ciudad:</h2>
-<ul>
-    {% for ciudad in ciudades %}
-        <li><a href="{{ url_for('clima') }}?ciudad={{ ciudad }}">{{ ciudad }}</a></li>
-    {% endfor %}
-</ul>
+<form action="{{ url_for('clima') }}" method="get">
+    <label for="ciudad">Selecciona una ciudad:</label>
+    <select name="ciudad" id="ciudad">
+        {% for nombre in ciudades.keys() %}
+            <option value="{{ nombre }}">{{ nombre }}</option>
+        {% endfor %}
+    </select>
+    <button type="submit">Ver Clima</button>
+</form>
 {% endblock %}
-
-
