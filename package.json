@@ -3,6 +3,6 @@
   "lockfileVersion": 3,
   "requires": true,
   "scripts": { 
-    "test": "node test.js"
+    "test":"node test.js"
   }
 }
